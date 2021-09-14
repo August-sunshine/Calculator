@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<nav>Calculator</nav>
+<form name="calc">
+  <table>
+    <tr>
+      <td>
+        <input type="text" size="16" id="calculator__display" value="0" />
+        <input type="button" name="one" value="1" onclick="clickNum(1)"/>
+        <input type="button" name="two" value="2" onclick="clickNum(2)"/>
+        <input type="button" name="three" value="3" onclick="clickNum(3)"/>
+        <input type="button" class="operator" name="plus" value="+" onclick="clickOperator('+')"/>
+        <br>
+        <input type="button" name="four" value="4" onclick="clickNum(4)"/>
+        <input type="button" name="five" value="5" onclick="clickNum(5)"/>
+        <input type="button" name="six" value="6" onclick="clickNum(6)"/>
+        <input type="button" class="operator" name="minus" value="-" onclick="clickOperator('-')"/>
+        <br>
+        <input type="button" name="seven" value="7" onclick="clickNum(7)"/>
+        <input type="button" name="eight" value="8" onclick="clickNum(8)"/>
+        <input type="button" name="nine" value="9" onclick="clickNum(9)"/>
+        <input type="button" class="operator" name="times" value="*" onclick="clickOperator('*')"/>
+        <br>
+        <input type="button" id="clear" name="clear" value=" C " onclick="clickClear()"/>
+        <input type="button" name="zero" value="0" onclick="clickNum(0)"/>
+        <input type="button" name="doit" value=" = " onclick = "getTotal()"/>
+        <input type="button" class="operator" name="div" value="/" onclick="clickOperator('/')"/>
+        <br>
+      </td>
+    </tr>
+  </table>
+</form>
+<script src="main.js"></script>
+</body>
